@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class CarLoanCalculator{
+public static void main (String[]args){
+Scanner sc = new Scanner(System.in);
+
+int carprice,downpayment,loanperiod,i=1,rate;
+double balance=0,interest=0,interests,principals,principal;
+
+System.out.print("Car price : ");
+carprice=sc.nextInt();
+if (carprice<30000)
+ System.out.print("Error,must higher than 30000");
+ else 
+  System.out.print("Down payment :");
+  downpayment=sc.nextInt();
+  
+  if (downpayment<=0)
+   System.out.print("Error,cannot be negative");
+   else
+    System.out.print("Loan period : ");
+    loanperiod=sc.nextInt();
+    
+if (loanperiod<=5||loanperiod>=9)
+  System.out.print("Error,must between 8-6 years");
+  else
+  System.out.print("Interest rate :");
+  rate=sc.nextInt();
+  
+if (rate<3||rate>7)
+ System.out.println("Error,must between 4-6 %");
+ else{
+ interest=(carprice-downpayment)*rate/100;
+ interests=interest;
+ principal=((carprice-downpayment)+(interest*loanperiod))/loanperiod;
+ principals=principal;
+ balance=(principal*loanperiod)-principal;
+ System.out.println("*************************************************");
+ 
+ System.out.printf("%n%16s%16s%16s%16s","YEARS","PRINCIPAL","INTEREST","BALANCE");
+ 
+ while (i<=loanperiod){
+ System.out.printf("%n%14d%17.2f%16.2f%18.2f",i,principals,interests,balance);
+  i++;
+  interests+=interest;
+  principals+=principal;
+  balance-=principal;}
+  
+}
+ }
+ }
