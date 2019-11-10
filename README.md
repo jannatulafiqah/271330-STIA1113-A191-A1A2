@@ -1,1 +1,4 @@
 # STIA1113-Assignment-1-2
+Student info.
+NAME        : NURUL JANNATUL AFIQAH BINTI AZHAN.
+MATRIC NUM  : 271330
