@@ -1,4 +1,4 @@
-# STIA1113-Assignment-1-2
+# 271330-STIA1113-A191-A1A2
 Student info.
 NAME        : NURUL JANNATUL AFIQAH BINTI AZHAN.
 MATRIC NUM  : 271330
@@ -44,4 +44,5 @@ Pseudocode.
 31.	principals+=principal.
 32.	balance-=principal.
 33.	End program.
+
 
